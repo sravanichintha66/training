@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms in HTML</title>
+    <style>
+        div{
+            margin-bottom: 15px
+        }
+      .register_form{
+        padding-left: 20px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: url(data:image/jpeg;base64,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);
+        }
+    </style>
+</head>
+<body>
+    <form class="register_form" style="text-align: left;margin-bottom:15px;">
+    <div>
+        <label for="fname">First Name:</label>
+        <input type="text" id="fname" placeholder="Enter your name" required/>
+    </div>
+    <div>
+        <label for="lname">Last Name:</label>
+        <input type="text" id="lname" placeholder="Enter your last name" />
+    </div>
+    <div>
+        <label for="mail">Email:</label>
+        <input type="email" id="mail" placeholder="Enter Email" required/>
+    </div>
+    <div>
+        <label for="password">Password:</label>
+        <input type="password" id="password" placeholder="Enter Password" required/>
+    </div>
+    <div>
+        <label for="age">Age:</label>
+        <input type="number" id="age" placeholder="Enter Age" min="18" max="60" required/>
+    </div>
+   <div>
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob"/>
+    </div>
+    <div>
+        <label for="gender">Gender:</label>
+        <input type="radio" name="gender" value="male"/>Male
+        <input type="radio" name="gender" value="female"/>Female
+        <input type="radio" name="gender" value="other"/>Other
+    </div>
+    <div>
+        <label for="hobbies">Hobbies:</label>
+        <input type="checkbox" value="Reading"/>Reading
+        <input type="checkbox" value="Playing"/>Playing
+        <input type="checkbox" value="Danceing"/>Dancing
+    </div>
+    <div>
+    <label for="year">Year of study:</label>
+    <select name="year" id="year">
+        <option value="1">1st year</option>
+        <option value="2">2nd year</option>
+        <option value="3">3rd year</option>
+        <option value="4">4th year</option>
+    </select>
+    </div>
+    <div>
+        <label for="address">Address:</label>
+        <textarea name="address" id="address" rows="5"></textarea>
+    </div>
+    <div>
+        <label for="file">Upload Resume</label>
+        <input type="file">
+    </div>
+    <div> 
+        <button type="rest">Reset</button>
+        <button type="submit">Submit</button>
+    </div>
+
+    </form>
+</body>
+</html>
