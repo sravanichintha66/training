@@ -1,0 +1,45 @@
+*{
+    margin: 0%;
+}
+
+h1{
+    color: aqua;
+}
+
+.class{
+    background-color: blue;
+}
+#class{
+    color: brown;
+}
+
+input[type="text"]{
+    height: 40px;
+    width: 70px;
+}
+
+h2,div{
+    color: black;
+}
+
+
+.parent div{
+    background-color: darkgreen;
+}
+
+.child-selector div{
+    font-size: larger;
+    color: blueviolet;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+
+.adjacent-div + p{
+    color: aqua;
+}
+
+
+.class-div ~ p{
+    color: aqua;
+}
