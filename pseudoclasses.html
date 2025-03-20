@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .button{
+            background-color: blue;
+            color: brown;
+         }
+        p:nth-child(even){
+            color:black;
+        }
+        .button:hover{
+            background-color:aqua;
+            height: 30px;
+            border: none;
+            border-radius: 10px;
+         }
+         
+#input-namme:focus{
+    border: 2px solid red;
+    outline: none;
+}
+        
+        p:first-child{
+            color: blue;
+        }
+
+.paragraph::first-letter{
+    color: chartreuse;
+    font-weight:bolder;
+}
+.paragraph::first-line{
+     color: chocolate;
+    font-weight: bolder;
+}
+p::after{
+    content:"😀"
+}
+
+p{
+    color: blueviolet !important;
+}
+
+.paragraph{
+    position: relative;
+    top: 40px;
+    bottom: 40px;
+}
+
+.parent-para{
+    position: absolute;
+    
+    bottom: 100px;
+}
+.big-para{
+    position: fixed;
+    top: 100px;
+    background-color: cornflowerblue;
+}
+
+.small-para{
+    position: sticky;
+    background-color: darkgreen;
+    font-size: x-large;
+    border-top: 15cm;
+}
+
+    </style>
+</head>
+<body>
+    <button class="button">
+        THIS IS BUTTON
+    </button>
+    <input type="text" name="" id="input-name">
+    <div>
+        <p>p1</p>
+        <p>p2</p>
+        <p>p3</p>
+        <p>p4</p>
+    </div>
+    <div>
+    <div class="paragraph">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur vero error ad libero necessitatibus dolorum nihil illum labore! Quaerat, necessitatibus aperiam et veritatis deserunt culpa vitae dignissimos, facilis, earum repudiandae possimus. Asperiores necessitatibus voluptas corporis porro? Maxime similique omnis nam dolor repudiandae quod odio eius nihil sit! Quisquam sequi molestiae exercitationem sint iste voluptate esse omnis non, quae, alias illo.
+    </p>
+    </div>
+    <div class="parent-para">
+       <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique optio nostrum sint! Placeat non quaerat, corrupti beatae ullam voluptatibus quidem, ipsa iure obcaecati quam molestiae reprehenderit laborum expedita cumque, quae delectus veniam ab veritatis! Quas dolore laborum rerum minus alias veniam dignissimos cum distinctio, nam aliquam itaque eius reiciendis dolorem!</p>
+    </div>
+    <div class="big-para">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In blanditiis sint ut repellat dolore, ad excepturi nostrum autem porro vitae. Officia iusto inventore molestiae nam perspiciatis voluptatum modi doloremque exercitationem beatae commodi id deleniti, quibusdam itaque alias, iure, et nulla porro fugiat impedit quasi tenetur excepturi! Laboriosam omnis, in hic autem unde voluptate sequi doloremque quis. Nisi maiores, quos vero quis reiciendis incidunt tempora laboriosam suscipit expedita accusamus vitae nesciunt distinctio earum eligendi saepe cupiditate explicabo? Perferendis non, rem aliquid minus explicabo, repellat veritatis officiis sit reprehenderit soluta alias nostrum, at eveniet quam! Odit illum debitis facere inventore nostrum dolor.</p>
+    </div>
+    <div class="small-para">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur alias debitis fuga perspiciatis neque, temporibus quo, sed voluptatem esse eum, vitae ex adipisci nulla autem! Praesentium fuga odit eos voluptate!</p>
+    </div>
+
+</body>
+</html>
