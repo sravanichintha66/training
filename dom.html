@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="mainContainer" id="root">
+        </div>
+        <script>
+            let rootElement = document.getElementById("root");
+            rootElement.textContent="Main Div";
+            rootElement.style.color="blue";
+            rootElement.style.fontSize="50px";
+
+
+            let heading1 = document.createElement("h1");
+            heading1.textContent = "Hi this is Sravani ";
+            rootElement.appendChild(heading1);
+            heading1.style.color = "red";
+            heading1.style.fontSize="100px";
+
+            let paragraph = document.createElement("p");
+            paragraph.textContent ="hieee helllooooo i am sravs from mattampally...";
+            rootElement.appendChild(paragraph);
+            paragraph.style.color = "violet";
+            paragraph.style.fontSize="50px";
+            paragraph.style.backgroundColor="aqua";
+        </script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .mainHeading{
+            color: aqua;
+            font-weight: 400;
+        }
+    </style>
+</head>
+<body>
+    <div class="mainContainer" id="root">
+    </div>
+    <script>
+            let rootElement = document.getElementById("root");
+            rootElement.textContent="Main Div";
+            rootElement.style.color="blue";
+            rootElement.style.fontSize="50px";
+
+
+            let heading1 = document.createElement("h1");
+            heading1.textContent = "Hi this is Sravani ";
+            rootElement.appendChild(heading1);
+
+            heading1.addEventListener("click",function(){
+                heading1.classList.toggle("mainHeading")
+                });
+
+            let heading2 = document.createElement("h2");
+            heading2.textContent = "Hi this is Sravs";
+            rootElement.appendChild(heading2);
+
+            heading2.addEventListener("mouseover",function(){
+                heading2.classList.add("mainHeading")
+                });   
+        
+            document.addEventListener("keydown",function(event){
+                if (event.key==="g"){
+                    console.log("the pressed key is:",event.key);
+                    heading1.style.color="yellow";
+                }
+            }); 
+            
+            document.addEventListener("keyup",function(event){
+                console.log("Anurag")
+            }); 
+
+    </script>
+    
+</body>
+</html>
